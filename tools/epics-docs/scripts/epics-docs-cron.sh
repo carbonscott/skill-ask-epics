@@ -48,7 +48,7 @@ run_sync() {
         --ext hpp java h c cpp py md dbd txt pl rst sh
 
     # Fix permissions for shared access
-    chgrp -R ps-data "$EPICS_DOCS_DATA_DIR"
+    chgrp -R ps-users "$EPICS_DOCS_DATA_DIR"
     chmod -R g+rX "$EPICS_DOCS_DATA_DIR"
 }
 
