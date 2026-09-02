@@ -71,4 +71,4 @@ If `EPICS_DOCS_ROOT` is still empty after sourcing, offer to run `./setup.sh` in
 - The docs are from 26 repos under the `epics-base` GitHub organization
 - File formats are mixed: C/C++ source (.c, .cpp, .h, .hpp), Java (.java), Python (.py), documentation (.md, .rst, .txt), EPICS-specific (.dbd), Perl (.pl), Shell (.sh)
 - The code is heavily C/C++ oriented — when searching for API docs, try function/class names directly
-- To update the index: `docs-index index "$EPICS_DOCS_ROOT" --incremental --ext hpp java h c cpp py md dbd txt pl rst sh`
+- To update the index: `source /path/to/this/skill/env.sh && docs-index index "$EPICS_DOCS_ROOT" --incremental --ext hpp java h c cpp py md dbd txt pl rst sh`
